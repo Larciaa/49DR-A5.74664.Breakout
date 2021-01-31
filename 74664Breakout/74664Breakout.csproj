@@ -125,16 +125,10 @@
     <None Include="Resources\gameTitle.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Options1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Start1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Start2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Options2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gameLevels.png" />
@@ -144,12 +138,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fixedExitHov.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fixedOptions.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fixedOptionsHov.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fixedStart.png" />
@@ -162,12 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fixedExitHov1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fixedOptions1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fixedOptionsHov1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fixedStart1.png" />
@@ -226,51 +208,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusic.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusicHov.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusic1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusic1Hov.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsVolume.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsBlank.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsVolumeText.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsVolumeText1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsVolumeText11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsVolumeText12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsVolume2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusicOff.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusicOffHov.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusicOn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\optionsMusicOnHov.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gameOptions.png" />
