@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\laura\OneDrive\Pulpit\Breakout\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +48,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BE64711378CA7528840E37FB35A407B70898CDDC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>74664Breakout_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,27 +74,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <None Include="74664Breakout_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,6 +117,190 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameLevels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedExitHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedOptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedOptionsHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedStartHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedExit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedExitHov1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedOptions1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedOptionsHov1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedStart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedStartHov1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsEasyShow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsMediumShow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsHardShow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsEasy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsMedium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsHard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsEasyHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsHardHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levelsMediumHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusicHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusic1Hov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsVolume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsVolumeText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsVolumeText1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsVolumeText11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsVolumeText12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsVolume2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusicOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusicOffHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusicOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\optionsMusicOnHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameOptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rulesPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rulesPic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedRules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixedRulesHov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameRules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 i x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

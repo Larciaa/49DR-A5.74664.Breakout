@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="74664Breakout.exe" version="1.0.0.0" publicKeyToken="ce828e6113671d21" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="74664Breakout" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="74664Breakout.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="74664Breakout.exe" size="24644576">
+      <assemblyIdentity name="74664Breakout" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NZR28OyuQAnKpBVvPuz1S+0x4OcK46V4JTfEPQqEdhY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KEiZT/P84Lx6Mfo113DyMisM6XJwUxjsLhChVgJbfYU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>w8aXPQNHZxkM1pSMTWUI6IawJZ/Y/vUUciUsxWUTklY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="74664Breakout.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-2PCG45A\laura" issuerKeyHash="b2902e2fa4c2d60b5737f28c0aa423c86af3ce98" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iAN4zK9v1wkl9EwS3K/2SQJ1yhXSQB73vjwxYcv1ZOI=</DigestValue></Reference></SignedInfo><SignatureValue>GBPI8YhsNOj7NWGN3QudpskPTfzJpNYtG9C19s/VeGMJ+YkMsgOecAigaDfr6XHD3HksXuuzC5i8zRj4MpWOJwJ4Za/17Ohw6xC0yQ3TMOZpKx7vyZRb5e6AYVTBY+Mr6eVQHknHJ4UJcrWMhxWUCrWitxLIB7WjhM6oiLgGXNg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>okkD1neo5fmkDug/0dMjBmqNmo0SVwcd7qNWu2lY04HPvMq3XS8q6qIHpGy0fWp2pPG8Doxn6ziu6bNBtwgKFp2jFJNEAybstfQastqT7gpNM7bIRMae0+zoWqhk2JJnyosv/qFJduto3+0cbNeFnNEeWQW1+OJJRn91rWYP4aE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e264f5cb61313cbef71e40d215ca750249f6afdc124cf42509d76fafcc780388" Description="" Url=""><as:assemblyIdentity name="74664Breakout.exe" version="1.0.0.0" publicKeyToken="ce828e6113671d21" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-2PCG45A\laura</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+PP70CG3ObUEWj6+/nj2gfgmwoctols0D65x+AKdl14=</DigestValue></Reference></SignedInfo><SignatureValue>XKv8Q82ltFuRt2WI3p1yT6kzdp98K/4JsEaSgBoP8kcjyyooK31/SNLwzc6ETOa1uZj5Ke13aBTWfk5J97nixJ51QS6fJ2k5yLBH9pxTNphpUXFTGJ9fV3a0n8bBaH0LI0z6HYA0PjktPwRI8udaeqKpqn3bXNrgxXFnvjX7Ie4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>okkD1neo5fmkDug/0dMjBmqNmo0SVwcd7qNWu2lY04HPvMq3XS8q6qIHpGy0fWp2pPG8Doxn6ziu6bNBtwgKFp2jFJNEAybstfQastqT7gpNM7bIRMae0+zoWqhk2JJnyosv/qFJduto3+0cbNeFnNEeWQW1+OJJRn91rWYP4aE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQXe2tG2/L8plF+vVuzcFnKTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADIAUABDAEcANAA1AEEAXABsAGEAdQByAGEwHhcNMjEwMTMxMTgyMjExWhcNMjIwMjAxMDAyMjExWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADIAUABDAEcANAA1AEEAXABsAGEAdQByAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKJJA9Z3qOX5pA7oP9HTIwZqjZqNElcHHe6jVrtpWNOBz7zKt10vKuqiB6RstH1qdqTxvA6MZ+s4rumzQbcIChadoxSTRAMm7LX0GrLak+4KTTO2yETGntPs6FqoZNiSZ8qLL/6hSXbraN/tHGzXhZzRHlkFtfjiSUZ/da1mD+GhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAfWCa/VsVXEkazRbVhl7je/oc8zYTA2SWVha3HubGxD/qnzX4TrFxpXGeAciistA5/AjvgXsTeydOW/F0WXoEfY89d6IW25S68b0f/+LEtrKrWm9NVUtcLXmFgvMZCO/xiy7rP8G7uJTtgXNUfZvYXhqDnxyP5rjJOuYg9jAFrXo=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

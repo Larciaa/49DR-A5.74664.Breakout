@@ -8,6 +8,7 @@ namespace _74664Breakout
 {
     static class Program
     {
+        //Level level = new Level();
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
@@ -16,7 +17,7 @@ namespace _74664Breakout
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new mainMenu());
         }
     }
 }
